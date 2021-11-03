@@ -52,6 +52,11 @@ body {
 
   /* flexbox CSS below here */
 
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
   ul {
     display: flex;
     flex-direction: row;
