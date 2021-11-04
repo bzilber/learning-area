@@ -50,7 +50,7 @@ body {
       width: 200px;
   }
 
-  /* flexbox CSS below here */
+  /* flexbox below here for navbar */
 
   nav {
     display: flex;
@@ -66,4 +66,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
+
+
+
+  /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. (Sticky Positioning)/*
