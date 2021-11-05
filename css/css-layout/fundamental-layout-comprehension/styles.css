@@ -50,7 +50,7 @@ body {
       width: 200px;
   }
 
-  /* flexbox below here for navbar */
+  /* flexbox below here for navbar w/ stick position  */
 
   nav {
     position:sticky;
@@ -80,3 +80,7 @@ body {
   /*for some reason putting it in with the flexbox content worked */
 
   /* The image that is inside the article should have text wrapped around it. */
+.feature {
+  float:left;
+  margin: 15px;
+}
