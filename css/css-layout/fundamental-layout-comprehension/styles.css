@@ -53,6 +53,11 @@ body {
   /* flexbox below here for navbar */
 
   nav {
+    position:sticky;
+    top: 0px;
+    margin-top: 0;
+    background: blue;
+    padding: 10px;
     display: flex;
     justify-content: center;
   }
@@ -71,4 +76,6 @@ body {
 
 
 
-  /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. (Sticky Positioning)/*
+  /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. (Sticky or fixed Positioning) very frustrating! how to apply positioning to a<> inside div without disrupting its contents? Perhaps, learn positioning from the start to slowly integrate this tinkering..*/
+
+  /* The image that is inside the article should have text wrapped around it. */
