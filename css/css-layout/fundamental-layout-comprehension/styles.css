@@ -74,13 +74,13 @@ body {
 
   }
 
-
-
-  /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. (Sticky or fixed Positioning) very frustrating! how to apply positioning to a<> inside div without disrupting its contents? Perhaps, learn positioning from the start to slowly integrate this tinkering..*/
-  /*for some reason putting it in with the flexbox content worked */
+  /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. Q: How to apply positioning to a<> inside div without disrupting its contents?*/
+  /*For some reason putting it in with the flexbox (above) content worked, perhaps conflict with using another nav? */
 
   /* The image that is inside the article should have text wrapped around it. */
 .feature {
   float:left;
   margin: 15px;
 }
+
+/*The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.*/
