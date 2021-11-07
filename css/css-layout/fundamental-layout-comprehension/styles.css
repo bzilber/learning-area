@@ -53,7 +53,7 @@ body {
   /* flexbox below here for navbar w/ stick position  */
 
   nav {
-    position:sticky;
+    position:sticky; /*makes nav bar scroll with content and stick to top of viewport when reached */
     top: 0px;
     margin-top: 0;
     background: blue;
@@ -61,13 +61,12 @@ body {
     display: flex;
     justify-content: center;
   }
-
-  ul {
+  .navBar {
     display: flex;
     flex-direction: row;
   }
 
-  li {
+  .navBar li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,10 +76,16 @@ body {
   /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. Q: How to apply positioning to a<> inside div without disrupting its contents?*/
   /*For some reason putting it in with the flexbox (above) content worked, perhaps conflict with using another nav? */
 
-  /* The image that is inside the article should have text wrapped around it. */
+  /* The image (first) that is inside the article should have text wrapped around it. */
 .feature {
   float:left;
   margin: 15px;
 }
 
 /*The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.*/
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+}
