@@ -42,7 +42,22 @@
     let color = 'blue';
 
     // Add your code here
+    function draw(x,y,width,height,color){
+      ctx.rect(x,y,width,height);
+      ctx.color(color);
+      ctx.stroke();
+    }
+    draw(x,y,width,height,color);
 
+
+    function drawSquare(x, y, width, height, color) {
+  ctx.fillStyle = 'white';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = color;
+  ctx.fillRect(x, y, width, height);
+}
+
+drawSquare(x, y, width, height, color);
     // Don't edit the code below here!
 
     const section = document.querySelector('section');

@@ -49,9 +49,8 @@
         listBtn.textContent = 'Delete';
         list.appendChild(listItem);
 
-        listBtn.onclick = function(e) {
-          list.removeChild(listItem);
-        }
+        listBtn.onclick = list.removeChild(listItem);
+        
 
         input.focus();
       }

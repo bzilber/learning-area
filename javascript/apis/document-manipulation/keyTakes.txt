@@ -4,11 +4,4 @@ HTMLInputElements properties, such as value:
 HTML DOM document.createElement(e):
     https://www.w3schools.com/jsref/met_document_createelement.asp
 
-Questions:
 
-listBtn.onclick = function(e) {
-          list.removeChild(listItem);
-        }
-why does this not perform like this: (deletes the input going in,instead of the child, listItem)
-    
-    listBtn.onclick= list.removeChild(listItem);

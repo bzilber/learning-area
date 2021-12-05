@@ -30,6 +30,24 @@
     let para = document.createElement('p');
 
     // Add your code here
+    function chooseName1(){
+      ran = Math.floor(Math.random()*8);
+      para.textContent = names[ran];
+    }
+  
+    
+ 
+function chooseName() {
+  let randomNumber = Math.floor(Math.random() * names.length);
+  let choice = names[randomNumber];
+  para.textContent = choice;
+}
+
+function chooseName2(){
+  let ranName = Math.floor(Math.random() *(names.length))
+  para.textContent = names[ranName];
+}
+chooseName2();
 
     // Don't edit the code below here!
 

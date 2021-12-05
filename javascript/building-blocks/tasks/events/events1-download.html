@@ -33,7 +33,12 @@
     let btn = document.querySelector('.off');
 
     // Add your code here
-
+btn.onclick = function() {
+  btn.textContent = "off";
+}
+btn.addEventListener('click', e => {
+  console.log(e.target);
+});
 
   </script>
 
