@@ -26,7 +26,40 @@
 
   </body>
   <script>
+    class Shape {
+      constructor(name, sides, sideLength) {
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+      }
 
+      calcPerimeter() {
+        let perimeter = this.sideLength * this.sides;
+        console.log(`The size is ${ perimeter } units `);
+      }
+    }
+
+    class Square extends Shape {
+      constructor(sideLength) {
+        super();
+        this.sideLength = sideLength;
+        this.name = 'square';
+        this.sides = 4;
+      }
+
+      calcArea(){
+        console.log(`The are is ${this.sideLength**2}`);
+      }
+    }
+
+      let square = new Square(7);
+      square.calcPerimeter();
+      square.calcArea();
+
+      let tri = new Shape('tri', 3, 5);
+      tri.calcPerimeter();
+
+      
   </script>
 
 </html>

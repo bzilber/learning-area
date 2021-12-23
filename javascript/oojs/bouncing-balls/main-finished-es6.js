@@ -13,7 +13,25 @@ function random(min, max) {
   return num;
 }
 
-class Ball {
+class Shape {
+   constructor(x, y, velX, velY, exists) {
+   this.x = x;
+   this.y = y;
+   this.velX = velX;
+   this.velY = velY;
+   this.exists = exists;
+   }
+ }
+
+/* class Ball extends Shape {
+   constructor(color, size){
+     super();
+     this.color = color;
+     this.size = size;
+   }
+ }*/
+ 
+class Ball extends Shape {
 
    constructor(x, y, velX, velY, color, size) {
       this.x = x;
@@ -67,7 +85,7 @@ class Ball {
    }
 
 }
-
+ 
 var balls = [];
 
 while (balls.length < 25) {

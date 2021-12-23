@@ -13,27 +13,23 @@ function random(min, max) {
   return num;
 }
 
-function Shape(x, y, velX, velY, exists) {
+class Shape {
+  constructor(x, y, velX, velY, exists) {
   this.x = x;
   this.y = y;
   this.velX = velX;
   this.velY = velY;
   this.exists = exists;
+  }
 }
 
-function Ball(x, y, velX, velY, exists, color, size){
-  Shape.call(this, x, y, velX, velY, exists)
-  this.color = color;
-  this.size = size;
+class Ball extends Shape {
+  constructor(color, size){
+    super();
+    this.color = color;
+    this.size = size;
+  }
 }
-
-Ball.prototype = Object.create(Shape.prototype);
-
-Object.defineProperty(Ball.prototype, 'constructor', {
-  value: Ball,
-  enumerable: false, // so that it does not appear in 'for in' loop
-  writable: true });
-
 
 Ball.prototype.draw = function() {
   ctx.beginPath();

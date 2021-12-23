@@ -33,6 +33,19 @@
     }
 
     // Write your code below here
+
+    Shape.prototype.calcPerimeter = function(){
+      perimeter = this.sideLength * this.sides;
+      //sidelength not defined
+      console.log(`The size is ${ perimeter } units `);
+    }
+
+    let square = new Shape('square', 4, 5);
+    square.calcPerimeter();
+
+    let tri = new Shape('tri', 3, 5);
+    tri.calcPerimeter();
+
   </script>
 
 </html>

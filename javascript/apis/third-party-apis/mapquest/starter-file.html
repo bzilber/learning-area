@@ -17,7 +17,7 @@
       var L;
 
       window.onload = function() {
-        L.mapquest.key = 'YOUR-API-KEY-HERE';
+        L.mapquest.key = 'sT6na0SJnfnNUZ4DU6xqwlTRh7geyJ2A';
 
         // 'map' refers to a <div> element with the ID map
         var map = L.mapquest.map('map', {
@@ -25,6 +25,8 @@
           layers: L.mapquest.tileLayer('map'),
           zoom: 12
         });
+        map.addControl(L.mapquest.control({ position:'bottomright' }));
+        map.addControl(L.mapquest.satelliteControl());
       }
     </script>
   </head>
